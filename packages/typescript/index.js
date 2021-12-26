@@ -1,9 +1,8 @@
 "use strict";
 
+const baseRules = require("eslint-config-convergence-base").rules;
 const allTypescriptRules = require("@typescript-eslint/eslint-plugin").rules;
 const prettierExcludedRules = require("eslint-config-prettier").rules;
-
-const baseRules = require("./base");
 
 const noTypeChecking = {
   "@typescript-eslint/adjacent-overload-signatures": "error",
