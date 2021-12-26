@@ -60,6 +60,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@rushstack/eslint-patch", "npm:1.1.0"],
             ["eslint", "npm:8.5.0"],
             ["eslint-config-convergence-base", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/base"],
             ["eslint-config-convergence-json", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/json"],
@@ -166,6 +167,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@npmcli/move-file", "npm:1.1.2"],
             ["mkdirp", "npm:1.0.4"],
             ["rimraf", "npm:3.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@rushstack/eslint-patch", [
+        ["npm:1.1.0", {
+          "packageLocation": "./.yarn/cache/@rushstack-eslint-patch-npm-1.1.0-49ab40dc81-4602c23454.zip/node_modules/@rushstack/eslint-patch/",
+          "packageDependencies": [
+            ["@rushstack/eslint-patch", "npm:1.1.0"]
           ],
           "linkType": "HARD",
         }]
@@ -983,6 +993,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", null],
             ["eslint", "npm:8.5.0"],
             ["eslint-plugin-jsonc", "virtual:143c717c553b5f631223b81ec863d3df90262a52a7711b839b4c441caca2a034a1ea69e4c6b2347459668de7a714c2a0a02d17eca1e98a78c65d933365928611#npm:2.0.0"],
+            ["jsonc-eslint-parser", "npm:2.0.4"],
             ["mocha", "npm:9.1.3"],
             ["npm-packlist", "npm:3.0.0"]
           ],
@@ -997,6 +1008,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["eslint-config-convergence-json", "workspace:packages/json"],
             ["eslint-plugin-jsonc", "virtual:c7262b447d617afac62e60623c66ebccad10dcb9c3c4518ade7f284c5b942fe082863a325a3a078170bf5aebccb2abe200febb0fc498aaab7d252695d1411660#npm:2.0.0"],
+            ["jsonc-eslint-parser", "npm:2.0.4"],
             ["mocha", "npm:9.1.3"],
             ["npm-packlist", "npm:3.0.0"]
           ],
@@ -2424,6 +2436,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["root-workspace-0b6124", "workspace:."],
+            ["@rushstack/eslint-patch", "npm:1.1.0"],
             ["eslint", "npm:8.5.0"],
             ["eslint-config-convergence-base", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/base"],
             ["eslint-config-convergence-json", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/json"],

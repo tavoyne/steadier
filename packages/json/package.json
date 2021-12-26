@@ -1,7 +1,8 @@
 {
   "author": "Théophile Avoyne",
   "dependencies": {
-    "eslint-plugin-jsonc": "^2.0.0"
+    "eslint-plugin-jsonc": "^2.0.0",
+    "jsonc-eslint-parser": "^2.0.4"
   },
   "devDependencies": {
     "mocha": "^9.1.3",
