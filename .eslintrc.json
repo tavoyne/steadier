@@ -3,7 +3,6 @@
     "node": true
   },
   "extends": ["convergence-base"],
-  "root": true,
   "overrides": [
     {
       "extends": ["convergence-json"],
@@ -15,5 +14,6 @@
       },
       "files": "*.test.js"
     }
-  ]
+  ],
+  "root": true
 }
