@@ -1,0 +1,19 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": ["convergence-base"],
+  "root": true,
+  "overrides": [
+    {
+      "extends": ["convergence-json"],
+      "files": "*.json"
+    },
+    {
+      "env": {
+        "mocha": true
+      },
+      "files": "*.test.js"
+    }
+  ]
+}
