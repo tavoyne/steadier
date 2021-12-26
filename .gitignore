@@ -1,8 +1,14 @@
+# Logs
+*.log
+
+# Operating system
+.DS_*
+
+# Yarn
 !.yarn/cache
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-.DS_Store
 .yarn/
