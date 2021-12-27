@@ -1,9 +1,36 @@
 "use strict";
 
 const assert = require("assert");
+const plugin = require("eslint-plugin-jsonc");
+const { pick } = require("lodash");
 
-describe("JSON:", () => {
+const allRules = plugin.rules;
+const conflictingRules = plugin.default.configs.base.overrides[0].rules;
+const forbiddenRules = plugin.default.configs.prettier.rules;
+
+const providedRules = require("./index").overrides[0].rules;
+
+const allRulesKeys = Object.keys(allRules)
+  .map((name) => {
+    return `jsonc/${name}`;
+  })
+  .filter((name) => {
+    return !forbiddenRules[name];
+  })
+  .sort();
+
+const providedRulesKeys = Object.keys(providedRules)
+  .filter((name) => {
+    return !conflictingRules[name];
+  })
+  .sort();
+
+describe("Base:", () => {
   it("All rules are present.", () => {
-    assert(true);
+    assert.deepEqual(
+      pick(providedRules, Object.keys(conflictingRules)),
+      conflictingRules
+    );
+    assert.deepEqual(allRulesKeys, providedRulesKeys);
   });
 });

@@ -5,6 +5,7 @@
     "jsonc-eslint-parser": "^2.0.4"
   },
   "devDependencies": {
+    "lodash": "^4.17.21",
     "mocha": "^9.1.3",
     "npm-packlist": "^3.0.0"
   },

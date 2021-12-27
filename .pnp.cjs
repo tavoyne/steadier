@@ -994,6 +994,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.5.0"],
             ["eslint-plugin-jsonc", "virtual:143c717c553b5f631223b81ec863d3df90262a52a7711b839b4c441caca2a034a1ea69e4c6b2347459668de7a714c2a0a02d17eca1e98a78c65d933365928611#npm:2.0.0"],
             ["jsonc-eslint-parser", "npm:2.0.4"],
+            ["lodash", "npm:4.17.21"],
             ["mocha", "npm:9.1.3"],
             ["npm-packlist", "npm:3.0.0"]
           ],
@@ -1009,6 +1010,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-convergence-json", "workspace:packages/json"],
             ["eslint-plugin-jsonc", "virtual:c7262b447d617afac62e60623c66ebccad10dcb9c3c4518ade7f284c5b942fe082863a325a3a078170bf5aebccb2abe200febb0fc498aaab7d252695d1411660#npm:2.0.0"],
             ["jsonc-eslint-parser", "npm:2.0.4"],
+            ["lodash", "npm:4.17.21"],
             ["mocha", "npm:9.1.3"],
             ["npm-packlist", "npm:3.0.0"]
           ],
@@ -1825,6 +1827,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["locate-path", "npm:6.0.0"],
             ["p-locate", "npm:5.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash", [
+        ["npm:4.17.21", {
+          "packageLocation": "./.yarn/cache/lodash-npm-4.17.21-6382451519-eb835a2e51.zip/node_modules/lodash/",
+          "packageDependencies": [
+            ["lodash", "npm:4.17.21"]
           ],
           "linkType": "HARD",
         }]
