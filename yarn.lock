@@ -694,7 +694,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"eslint-config-convergence-node@workspace:packages/node":
+"eslint-config-convergence-node@workspace:^, eslint-config-convergence-node@workspace:packages/node":
   version: 0.0.0-use.local
   resolution: "eslint-config-convergence-node@workspace:packages/node"
   dependencies:
@@ -1959,6 +1959,7 @@ __metadata:
     eslint: ^8.5.0
     eslint-config-convergence-base: "workspace:^"
     eslint-config-convergence-json: "workspace:^"
+    eslint-config-convergence-node: "workspace:^"
     prettier: ^2.5.1
     typescript: ^4.5.4
   languageName: unknown
