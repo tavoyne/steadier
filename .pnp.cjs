@@ -965,8 +965,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", null],
             ["eslint", "npm:8.5.0"],
             ["eslint-config-prettier", "virtual:526b7a229fe578248b15b89143aa444c3706f3866d7b42ddbec8b614afde3c3e4cf90488d83357b560e94a977df238ab0c64b7c32ae465e51a45ba0bb9878f41#npm:8.3.0"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -980,8 +979,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-convergence-base", "workspace:packages/base"],
             ["eslint", "npm:8.5.0"],
             ["eslint-config-prettier", "virtual:526b7a229fe578248b15b89143aa444c3706f3866d7b42ddbec8b614afde3c3e4cf90488d83357b560e94a977df238ab0c64b7c32ae465e51a45ba0bb9878f41#npm:8.3.0"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -996,8 +994,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jsonc", "virtual:143c717c553b5f631223b81ec863d3df90262a52a7711b839b4c441caca2a034a1ea69e4c6b2347459668de7a714c2a0a02d17eca1e98a78c65d933365928611#npm:2.0.0"],
             ["jsonc-eslint-parser", "npm:2.0.4"],
             ["lodash", "npm:4.17.21"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -1012,8 +1009,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-jsonc", "virtual:c7262b447d617afac62e60623c66ebccad10dcb9c3c4518ade7f284c5b942fe082863a325a3a078170bf5aebccb2abe200febb0fc498aaab7d252695d1411660#npm:2.0.0"],
             ["jsonc-eslint-parser", "npm:2.0.4"],
             ["lodash", "npm:4.17.21"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -1025,8 +1021,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-convergence-node", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/node"],
             ["@types/eslint", null],
             ["eslint", "npm:8.5.0"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -1038,8 +1033,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/node/",
           "packageDependencies": [
             ["eslint-config-convergence-node", "workspace:packages/node"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -1049,8 +1043,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./packages/react/",
           "packageDependencies": [
             ["eslint-config-convergence-react", "workspace:packages/react"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -1065,8 +1058,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.5.0"],
             ["eslint-config-convergence-base", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/base"],
             ["eslint-config-prettier", "virtual:526b7a229fe578248b15b89143aa444c3706f3866d7b42ddbec8b614afde3c3e4cf90488d83357b560e94a977df238ab0c64b7c32ae465e51a45ba0bb9878f41#npm:8.3.0"],
-            ["mocha", "npm:9.1.3"],
-            ["npm-packlist", "npm:3.0.0"]
+            ["mocha", "npm:9.1.3"]
           ],
           "linkType": "SOFT",
         }]
@@ -1624,16 +1616,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["ignore-walk", [
-        ["npm:4.0.1", {
-          "packageLocation": "./.yarn/cache/ignore-walk-npm-4.0.1-e301e7e75f-903cd5cb68.zip/node_modules/ignore-walk/",
-          "packageDependencies": [
-            ["ignore-walk", "npm:4.0.1"],
-            ["minimatch", "npm:3.0.4"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
       ["import-fresh", [
         ["npm:3.3.0", {
           "packageLocation": "./.yarn/cache/import-fresh-npm-3.3.0-3e34265ca9-2cacfad06e.zip/node_modules/import-fresh/",
@@ -2134,38 +2116,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/normalize-path-npm-3.0.0-658ba7d77f-88eeb4da89.zip/node_modules/normalize-path/",
           "packageDependencies": [
             ["normalize-path", "npm:3.0.0"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["npm-bundled", [
-        ["npm:1.1.2", {
-          "packageLocation": "./.yarn/cache/npm-bundled-npm-1.1.2-e299e533ef-6e599155ef.zip/node_modules/npm-bundled/",
-          "packageDependencies": [
-            ["npm-bundled", "npm:1.1.2"],
-            ["npm-normalize-package-bin", "npm:1.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["npm-normalize-package-bin", [
-        ["npm:1.0.1", {
-          "packageLocation": "./.yarn/cache/npm-normalize-package-bin-npm-1.0.1-2cf38a5d95-ae7f15155a.zip/node_modules/npm-normalize-package-bin/",
-          "packageDependencies": [
-            ["npm-normalize-package-bin", "npm:1.0.1"]
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["npm-packlist", [
-        ["npm:3.0.0", {
-          "packageLocation": "./.yarn/cache/npm-packlist-npm-3.0.0-9671ff7386-8550ecdec5.zip/node_modules/npm-packlist/",
-          "packageDependencies": [
-            ["npm-packlist", "npm:3.0.0"],
-            ["glob", "npm:7.2.0"],
-            ["ignore-walk", "npm:4.0.1"],
-            ["npm-bundled", "npm:1.1.2"],
-            ["npm-normalize-package-bin", "npm:1.0.1"]
           ],
           "linkType": "HARD",
         }]
