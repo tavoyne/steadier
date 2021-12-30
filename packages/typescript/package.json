@@ -1,13 +1,13 @@
 {
   "author": "Théophile Avoyne",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
     "eslint": "^8.5.0",
     "eslint-config-convergence-base": "workspace:^",
     "eslint-config-prettier": "^8.3.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.1",
     "mocha": "^9.1.3"
   },
   "files": [
