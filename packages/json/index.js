@@ -1,6 +1,6 @@
 "use strict";
 
-const problems = {
+const problem = {
   "jsonc/no-bigint-literals": "error",
   "jsonc/no-binary-expression": "error",
   "jsonc/no-binary-numeric-literals": "error",
@@ -40,8 +40,9 @@ module.exports = {
       files: ["*.json", "*.json5", "*.jsonc"],
       parser: "jsonc-eslint-parser",
       rules: {
-        ...problems,
+        ...problem,
         ...suggestion,
+        // ESLint core rules known to cause problems with JSON.
         "no-unused-expressions": "off",
         strict: "off",
       },

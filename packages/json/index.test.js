@@ -5,8 +5,8 @@ const plugin = require("eslint-plugin-jsonc");
 const { pick } = require("lodash");
 
 const allRules = plugin.rules;
-const conflictingRules = plugin.default.configs.base.overrides[0].rules;
-const forbiddenRules = plugin.default.configs.prettier.rules;
+const conflictingRules = plugin.configs.base.overrides[0].rules;
+const forbiddenRules = plugin.configs.prettier.rules;
 
 const providedRules = require("./index").overrides[0].rules;
 
@@ -25,7 +25,7 @@ const providedRulesKeys = Object.keys(providedRules)
   })
   .sort();
 
-describe("Base:", () => {
+describe("JSON:", () => {
   it("All rules are present.", () => {
     assert.deepEqual(
       pick(providedRules, Object.keys(conflictingRules)),
