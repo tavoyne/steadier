@@ -5,6 +5,7 @@
     "eslint-config-convergence-base": "workspace:^",
     "eslint-config-convergence-json": "workspace:^",
     "eslint-config-convergence-node": "workspace:^",
+    "eslint-config-convergence-yaml": "workspace:^",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },

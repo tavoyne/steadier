@@ -5,7 +5,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "eslint.nodePath": ".yarn/sdks",
-  "eslint.validate": ["json", "json5", "jsonc"],
+  "eslint.validate": ["json", "json5", "jsonc", "yaml", "yml"],
   "prettier.prettierPath": ".yarn/sdks/prettier/index.js",
   "search.exclude": {
     "**/.pnp.*": true,

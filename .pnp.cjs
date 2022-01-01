@@ -41,6 +41,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       {
         "name": "eslint-config-convergence-typescript",
         "reference": "workspace:packages/typescript"
+      },
+      {
+        "name": "eslint-config-convergence-yaml",
+        "reference": "workspace:packages/yaml"
       }
     ],
     "enableTopLevelFallback": true,
@@ -51,6 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["eslint-config-convergence-node", ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/node", "workspace:packages/node"]],
       ["eslint-config-convergence-react", ["workspace:packages/react"]],
       ["eslint-config-convergence-typescript", ["workspace:packages/typescript"]],
+      ["eslint-config-convergence-yaml", ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/yaml", "workspace:packages/yaml"]],
       ["root-workspace-0b6124", ["workspace:."]]
     ],
     "fallbackPool": [
@@ -65,6 +70,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-convergence-base", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/base"],
             ["eslint-config-convergence-json", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/json"],
             ["eslint-config-convergence-node", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/node"],
+            ["eslint-config-convergence-yaml", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/yaml"],
             ["prettier", "npm:2.5.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
@@ -1063,6 +1069,36 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "SOFT",
         }]
       ]],
+      ["eslint-config-convergence-yaml", [
+        ["virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/yaml", {
+          "packageLocation": "./.yarn/__virtual__/eslint-config-convergence-yaml-virtual-9505f0594c/1/packages/yaml/",
+          "packageDependencies": [
+            ["eslint-config-convergence-yaml", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/yaml"],
+            ["@types/eslint", null],
+            ["eslint", "npm:8.5.0"],
+            ["eslint-plugin-yml", "virtual:9505f0594cf92a0ae2b7da58e42ee00da881946cf2d443ac8ad546c8194479a0dd3aad0fa2c8d3ca865769ca57e351366f38083c1311140bd0e1613258c17a89#npm:0.12.0"],
+            ["lodash", "npm:4.17.21"],
+            ["mocha", "npm:9.1.3"],
+            ["yaml-eslint-parser", "npm:0.5.0"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "eslint"
+          ],
+          "linkType": "SOFT",
+        }],
+        ["workspace:packages/yaml", {
+          "packageLocation": "./packages/yaml/",
+          "packageDependencies": [
+            ["eslint-config-convergence-yaml", "workspace:packages/yaml"],
+            ["eslint-plugin-yml", "virtual:fda60174def015cca80a3f2eaef8a96b01aaf7c1c0c7c6a96d8d8ed77155d31602f3969d9de29a2b2cfafa619d6f5df5865067f5155488ec535a2356fedb7947#npm:0.12.0"],
+            ["lodash", "npm:4.17.21"],
+            ["mocha", "npm:9.1.3"],
+            ["yaml-eslint-parser", "npm:0.5.0"]
+          ],
+          "linkType": "SOFT",
+        }]
+      ]],
       ["eslint-config-prettier", [
         ["npm:8.3.0", {
           "packageLocation": "./.yarn/cache/eslint-config-prettier-npm-8.3.0-f540cd1f53-df4cea3032.zip/node_modules/eslint-config-prettier/",
@@ -1118,6 +1154,49 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-utils", "virtual:3234830bd854fad2fbd87a7ec0f6cb4c75f5add77fba58c17e8a3de01a4dc05e697d7c0bbc6ec5caedb27859da74dc15ef4b50002eebf0d5e7167ed454b2a0e2#npm:3.0.0"],
             ["jsonc-eslint-parser", "npm:2.0.4"],
             ["natural-compare", "npm:1.4.0"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "eslint"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["eslint-plugin-yml", [
+        ["npm:0.12.0", {
+          "packageLocation": "./.yarn/cache/eslint-plugin-yml-npm-0.12.0-d39f93c3e6-67432347b4.zip/node_modules/eslint-plugin-yml/",
+          "packageDependencies": [
+            ["eslint-plugin-yml", "npm:0.12.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:9505f0594cf92a0ae2b7da58e42ee00da881946cf2d443ac8ad546c8194479a0dd3aad0fa2c8d3ca865769ca57e351366f38083c1311140bd0e1613258c17a89#npm:0.12.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-yml-virtual-87e574a4d3/0/cache/eslint-plugin-yml-npm-0.12.0-d39f93c3e6-67432347b4.zip/node_modules/eslint-plugin-yml/",
+          "packageDependencies": [
+            ["eslint-plugin-yml", "virtual:9505f0594cf92a0ae2b7da58e42ee00da881946cf2d443ac8ad546c8194479a0dd3aad0fa2c8d3ca865769ca57e351366f38083c1311140bd0e1613258c17a89#npm:0.12.0"],
+            ["@types/eslint", null],
+            ["debug", "virtual:bd5ac53f2a4d13161e4becd2185852df3b4231ea7460becce6b80faf113589c84e6d5a7592f2b45846dcda321b203d871f080c12cd9638e02938ccdf6bfbd6ee#npm:4.3.3"],
+            ["eslint", "npm:8.5.0"],
+            ["lodash", "npm:4.17.21"],
+            ["natural-compare", "npm:1.4.0"],
+            ["yaml-eslint-parser", "npm:0.5.0"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "eslint"
+          ],
+          "linkType": "HARD",
+        }],
+        ["virtual:fda60174def015cca80a3f2eaef8a96b01aaf7c1c0c7c6a96d8d8ed77155d31602f3969d9de29a2b2cfafa619d6f5df5865067f5155488ec535a2356fedb7947#npm:0.12.0", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-yml-virtual-ebf83b9cdd/0/cache/eslint-plugin-yml-npm-0.12.0-d39f93c3e6-67432347b4.zip/node_modules/eslint-plugin-yml/",
+          "packageDependencies": [
+            ["eslint-plugin-yml", "virtual:fda60174def015cca80a3f2eaef8a96b01aaf7c1c0c7c6a96d8d8ed77155d31602f3969d9de29a2b2cfafa619d6f5df5865067f5155488ec535a2356fedb7947#npm:0.12.0"],
+            ["@types/eslint", null],
+            ["debug", "virtual:bd5ac53f2a4d13161e4becd2185852df3b4231ea7460becce6b80faf113589c84e6d5a7592f2b45846dcda321b203d871f080c12cd9638e02938ccdf6bfbd6ee#npm:4.3.3"],
+            ["eslint", null],
+            ["lodash", "npm:4.17.21"],
+            ["natural-compare", "npm:1.4.0"],
+            ["yaml-eslint-parser", "npm:0.5.0"]
           ],
           "packagePeers": [
             "@types/eslint",
@@ -2418,6 +2497,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-config-convergence-base", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/base"],
             ["eslint-config-convergence-json", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/json"],
             ["eslint-config-convergence-node", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/node"],
+            ["eslint-config-convergence-yaml", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#workspace:packages/yaml"],
             ["prettier", "npm:2.5.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
@@ -2834,6 +2914,27 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip/node_modules/yallist/",
           "packageDependencies": [
             ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yaml", [
+        ["npm:1.10.2", {
+          "packageLocation": "./.yarn/cache/yaml-npm-1.10.2-0e780aebdf-ce4ada136e.zip/node_modules/yaml/",
+          "packageDependencies": [
+            ["yaml", "npm:1.10.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yaml-eslint-parser", [
+        ["npm:0.5.0", {
+          "packageLocation": "./.yarn/cache/yaml-eslint-parser-npm-0.5.0-179b8977e1-f4b316407f.zip/node_modules/yaml-eslint-parser/",
+          "packageDependencies": [
+            ["yaml-eslint-parser", "npm:0.5.0"],
+            ["eslint-visitor-keys", "npm:3.1.0"],
+            ["lodash", "npm:4.17.21"],
+            ["yaml", "npm:1.10.2"]
           ],
           "linkType": "HARD",
         }]
