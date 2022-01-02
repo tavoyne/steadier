@@ -29,4 +29,5 @@
 !/.yarnrc.yml
 !LICENSE
 !/package.json
+!README.md
 !/yarn.lock
