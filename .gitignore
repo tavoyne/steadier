@@ -4,7 +4,8 @@
 !.gitignore
 
 !/.github
-!/.github/**/*.yml
+!/.github/workflows
+!/.github/workflows/*.yml
 
 !/.vscode
 !/.vscode/extensions.json
