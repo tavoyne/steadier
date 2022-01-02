@@ -3,6 +3,9 @@
 !.eslintrc.cjs
 !.gitignore
 
+!/.github
+!/.github/**/*.yml
+
 !/.vscode
 !/.vscode/extensions.json
 !/.vscode/settings.json
