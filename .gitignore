@@ -27,5 +27,6 @@
 !/.pnp.cjs
 !/.prettierignore
 !/.yarnrc.yml
+!LICENSE
 !/package.json
 !/yarn.lock
