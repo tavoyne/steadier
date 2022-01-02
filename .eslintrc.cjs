@@ -13,7 +13,7 @@ module.exports = {
   overrides: [
     {
       env: { mocha: true },
-      files: ["*.test.js"],
+      files: ["*.test.cjs"],
     },
   ],
   root: true,
