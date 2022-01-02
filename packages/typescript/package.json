@@ -14,7 +14,7 @@
     "index.js"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "index.cjs",
   "name": "eslint-config-convergence-typescript",
   "scripts": {
     "test": "mocha index.test.js --exit"

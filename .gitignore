@@ -1,6 +1,6 @@
 *
 
-!.eslintrc.js
+!.eslintrc.cjs
 !.gitignore
 
 !/.vscode
@@ -21,7 +21,7 @@
 
 !/packages
 !/packages/**/
-!/packages/**/*.js
+!/packages/**/*.cjs
 !/packages/*/package.json
 
 !/.pnp.cjs
