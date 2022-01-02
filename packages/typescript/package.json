@@ -17,7 +17,7 @@
   "main": "index.cjs",
   "name": "eslint-config-convergence-typescript",
   "scripts": {
-    "test": "mocha index.test.js --exit"
+    "test": "mocha index.test.cjs --exit"
   },
   "version": "1.0.0"
 }

@@ -1,8 +1,8 @@
 "use strict";
 
-const accessibility = require("./accessibility");
-const hooks = require("./hooks");
-const react = require("./react");
+const accessibility = require("./accessibility.cjs");
+const hooks = require("./hooks.cjs");
+const react = require("./react.cjs");
 
 module.exports = {
   rules: {

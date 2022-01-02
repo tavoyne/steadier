@@ -8,7 +8,7 @@ const allRules = plugin.rules;
 const conflictingRules = plugin.configs.base.overrides[0].rules;
 const forbiddenRules = plugin.configs.prettier.rules;
 
-const providedRules = require("./index").overrides[0].rules;
+const providedRules = require("./index.cjs").overrides[0].rules;
 
 const allRulesKeys = Object.keys(allRules)
   .map((name) => {

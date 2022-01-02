@@ -4,7 +4,7 @@ const assert = require("assert");
 const allRules = new (require("eslint").Linter)().getRules();
 const forbiddenRules = require("eslint-config-prettier").rules;
 
-const providedRules = require("./index").rules;
+const providedRules = require("./index.cjs").rules;
 
 const allRulesKeys = Array.from(allRules.keys())
   .filter((name) => {
