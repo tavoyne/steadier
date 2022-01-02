@@ -48,4 +48,4 @@ targetting.
 2. Convergence favorises rules that enforce one syntax and forbid all other ones. If there's still
    two ways of writing something after running Convergence, Convergence team is sad.
 3. Convergence cares about **code quality rules** not formatting. Formatting is left to Prettier who
-   killed the thing!
+   killed the thing.
