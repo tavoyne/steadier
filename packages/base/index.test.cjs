@@ -1,7 +1,8 @@
 "use strict";
 
 const assert = require("assert");
-const allRules = new (require("eslint").Linter)().getRules();
+const { Linter } = require("eslint");
+const allRules = new Linter().getRules();
 const forbiddenRules = require("eslint-config-prettier").rules;
 
 const providedRules = require("./index.cjs").rules;
