@@ -51,3 +51,51 @@ targetting.
    two ways of writing something after running Convergence, Convergence team is sad.
 3. Convergence cares about **code quality rules** not formatting. Formatting is left to Prettier who
    killed the thing.
+
+# Getting started
+
+If you want to be up and running in seconds, just download the config package:
+
+```bash
+npm install --save-dev --save-exact @convergence/eslint-config
+```
+
+```bash
+yarn add --dev --exact @convergence/eslint-config
+```
+
+And add it to your .eslintrc.js file:
+
+```jsonc
+{
+  // ...
+  "extends": ["@convergence"]
+}
+```
+
+That's basically it!
+
+BUT, now you're checking all kind of files (YAML, etc.). If you only want to lint a specific set of
+files and are afraid of downloading the whole set of plugins (which you should be if you're
+performing CI), you can download each plugin individually:
+
+```bash
+npm install --save-dev --save-exact @convergence/eslint-plugin-react
+```
+
+```bash
+yarn add --dev --exact @convergence/eslint-plugin-react
+```
+
+And use them that way:
+
+```jsonc
+{
+  // ...
+  "extends": [
+     "plugin:@convergence/react"
+     "plugin:@convergence/yaml",
+     // ...
+   ]
+}
+```
