@@ -9,7 +9,7 @@ module.exports = {
     "convergence-node",
     "convergence-yaml",
   ],
-  ignorePatterns: ["!.*", "/.pnp.*", "/.yarn/", "/yarn.lock"],
+  ignorePatterns: ["!.*", "/.pnp.*", "/.yarn/"],
   overrides: [
     {
       env: { mocha: true },
