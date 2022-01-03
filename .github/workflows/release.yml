@@ -1,0 +1,16 @@
+jobs:
+  apply-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Apply the version change to all the workspaces
+        run: yarn version apply --all
+      - name: Commit
+        run: |
+          git config --global user.name 'Convergence Bot'
+          git config --global user.email 'convergence-bot@users.noreply.github.com'
+          git commit -am "Apply version"
+          git push
+name: Release
+on: workflow_dispatch
