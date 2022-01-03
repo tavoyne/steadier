@@ -27,11 +27,12 @@
 !/packages/**/
 !/packages/**/*.cjs
 !/packages/*/package.json
+!/packages/*/README.md
 
 !/.pnp.cjs
 !/.prettierignore
 !/.yarnrc.yml
-!LICENSE
+!/LICENSE
 !/package.json
-!README.md
+!/README.md
 !/yarn.lock
