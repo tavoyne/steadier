@@ -1,3 +1,5 @@
+## WORK IN PROGRESS
+
 Although common sense led the most of us to the same conclusion, the advent of Prettier in the
 recent years demonstrated that the ecosystem was in need for a configless, opinionated way of
 checking its code.
