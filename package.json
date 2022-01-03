@@ -1,12 +1,9 @@
 {
-  "description": "Convergence is an opinionated code quality checker.",
+  "description": "Steadier is an opinionated code quality checker.",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
+    "@steadier/eslint-config": "workspace:^",
     "eslint": "^8.5.0",
-    "eslint-config-convergence-base": "workspace:^",
-    "eslint-config-convergence-json": "workspace:^",
-    "eslint-config-convergence-node": "workspace:^",
-    "eslint-config-convergence-yaml": "workspace:^",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },

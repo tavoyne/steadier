@@ -5,7 +5,7 @@
 *
 
 # Files tracked everywhere
-!.eslintrc.cjs
+!.eslintrc.js
 !.gitignore
 
 # Root
@@ -13,8 +13,8 @@
 !/.prettierignore
 !/.yarnrc.yml
 !/LICENSE
-!/package.json
 !/README.md
+!/package.json
 !/yarn.lock
 
 # GitHub
@@ -44,8 +44,9 @@
 
 # Packages
 !/packages
-!/packages/**/
-!/packages/**/*.cjs
+!/packages/**/*.js
+!/packages/*/
 !/packages/*/LICENSE
-!/packages/*/package.json
 !/packages/*/README.md
+!/packages/*/package.json
+!/packages/*/rules

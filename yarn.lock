@@ -101,6 +101,91 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@steadier/eslint-config@workspace:^, @steadier/eslint-config@workspace:packages/config":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-config@workspace:packages/config"
+  dependencies:
+    "@steadier/eslint-plugin-base": "workspace:^"
+    "@steadier/eslint-plugin-json": "workspace:^"
+    "@steadier/eslint-plugin-node": "workspace:^"
+    "@steadier/eslint-plugin-yaml": "workspace:^"
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-base@workspace:^, @steadier/eslint-plugin-base@workspace:packages/plugin-base":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-base@workspace:packages/plugin-base"
+  dependencies:
+    eslint: ^8.5.0
+    eslint-config-prettier: ^8.3.0
+    mocha: ^9.1.3
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-json@workspace:^, @steadier/eslint-plugin-json@workspace:packages/plugin-json":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-json@workspace:packages/plugin-json"
+  dependencies:
+    eslint-plugin-jsonc: ^2.0.0
+    jsonc-eslint-parser: ^2.0.4
+    lodash: ^4.17.21
+    mocha: ^9.1.3
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-node@workspace:^, @steadier/eslint-plugin-node@workspace:packages/plugin-node":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-node@workspace:packages/plugin-node"
+  dependencies:
+    eslint-plugin-node: ^11.1.0
+    mocha: ^9.1.3
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-react@workspace:packages/plugin-react":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-react@workspace:packages/plugin-react"
+  dependencies:
+    mocha: ^9.1.3
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-typescript@workspace:packages/plugin-typescript":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-typescript@workspace:packages/plugin-typescript"
+  dependencies:
+    "@steadier/eslint-plugin-base": "workspace:^"
+    "@typescript-eslint/eslint-plugin": ^5.8.1
+    "@typescript-eslint/parser": ^5.8.1
+    eslint: ^8.5.0
+    eslint-config-prettier: ^8.3.0
+    mocha: ^9.1.3
+  languageName: unknown
+  linkType: soft
+
+"@steadier/eslint-plugin-yaml@workspace:^, @steadier/eslint-plugin-yaml@workspace:packages/plugin-yaml":
+  version: 0.0.0-use.local
+  resolution: "@steadier/eslint-plugin-yaml@workspace:packages/plugin-yaml"
+  dependencies:
+    eslint-plugin-yml: ^0.12.0
+    lodash: ^4.17.21
+    mocha: ^9.1.3
+    yaml-eslint-parser: ^0.5.0
+  peerDependencies:
+    eslint: "*"
+  languageName: unknown
+  linkType: soft
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -666,78 +751,6 @@ __metadata:
   checksum: 98b48897d93060f2322108bf29db0feba7dd774be96cd069458d1453347b25ce8682ecc39859d4bca2203cc0ab19c237bcc71755eff49a0f8d90beadeeba5cc5
   languageName: node
   linkType: hard
-
-"eslint-config-convergence-base@workspace:^, eslint-config-convergence-base@workspace:packages/base":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-base@workspace:packages/base"
-  dependencies:
-    eslint: ^8.5.0
-    eslint-config-prettier: ^8.3.0
-    mocha: ^9.1.3
-  peerDependencies:
-    eslint: "*"
-  languageName: unknown
-  linkType: soft
-
-"eslint-config-convergence-json@workspace:^, eslint-config-convergence-json@workspace:packages/json":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-json@workspace:packages/json"
-  dependencies:
-    eslint-plugin-jsonc: ^2.0.0
-    jsonc-eslint-parser: ^2.0.4
-    lodash: ^4.17.21
-    mocha: ^9.1.3
-  peerDependencies:
-    eslint: "*"
-  languageName: unknown
-  linkType: soft
-
-"eslint-config-convergence-node@workspace:^, eslint-config-convergence-node@workspace:packages/node":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-node@workspace:packages/node"
-  dependencies:
-    eslint-plugin-node: ^11.1.0
-    mocha: ^9.1.3
-  peerDependencies:
-    eslint: "*"
-  languageName: unknown
-  linkType: soft
-
-"eslint-config-convergence-react@workspace:packages/react":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-react@workspace:packages/react"
-  dependencies:
-    mocha: ^9.1.3
-  peerDependencies:
-    eslint: "*"
-  languageName: unknown
-  linkType: soft
-
-"eslint-config-convergence-typescript@workspace:packages/typescript":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-typescript@workspace:packages/typescript"
-  dependencies:
-    "@typescript-eslint/eslint-plugin": ^5.8.1
-    "@typescript-eslint/parser": ^5.8.1
-    eslint: ^8.5.0
-    eslint-config-convergence-base: "workspace:^"
-    eslint-config-prettier: ^8.3.0
-    mocha: ^9.1.3
-  languageName: unknown
-  linkType: soft
-
-"eslint-config-convergence-yaml@workspace:^, eslint-config-convergence-yaml@workspace:packages/yaml":
-  version: 0.0.0-use.local
-  resolution: "eslint-config-convergence-yaml@workspace:packages/yaml"
-  dependencies:
-    eslint-plugin-yml: ^0.12.0
-    lodash: ^4.17.21
-    mocha: ^9.1.3
-    yaml-eslint-parser: ^0.5.0
-  peerDependencies:
-    eslint: "*"
-  languageName: unknown
-  linkType: soft
 
 "eslint-config-prettier@npm:^8.3.0":
   version: 8.3.0
@@ -2036,11 +2049,8 @@ __metadata:
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
     "@rushstack/eslint-patch": ^1.1.0
+    "@steadier/eslint-config": "workspace:^"
     eslint: ^8.5.0
-    eslint-config-convergence-base: "workspace:^"
-    eslint-config-convergence-json: "workspace:^"
-    eslint-config-convergence-node: "workspace:^"
-    eslint-config-convergence-yaml: "workspace:^"
     prettier: ^2.5.1
     typescript: ^4.5.4
   languageName: unknown

@@ -1,0 +1,16 @@
+{
+  "author": "Théophile Avoyne",
+  "dependencies": {
+    "@steadier/eslint-plugin-base": "workspace:^",
+    "@steadier/eslint-plugin-json": "workspace:^",
+    "@steadier/eslint-plugin-node": "workspace:^",
+    "@steadier/eslint-plugin-yaml": "workspace:^"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@steadier/eslint-config",
+  "peerDependencies": {
+    "eslint": "*"
+  },
+  "version": "1.0.0-0"
+}
