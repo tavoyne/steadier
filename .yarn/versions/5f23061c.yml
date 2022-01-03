@@ -1,8 +1,0 @@
-releases:
-  "@steadier/eslint-config": prerelease
-  "@steadier/eslint-plugin-base": prerelease
-  "@steadier/eslint-plugin-json": prerelease
-  "@steadier/eslint-plugin-node": prerelease
-  "@steadier/eslint-plugin-react": prerelease
-  "@steadier/eslint-plugin-typescript": prerelease
-  "@steadier/eslint-plugin-yaml": prerelease
