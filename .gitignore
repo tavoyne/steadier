@@ -26,6 +26,7 @@
 !/packages
 !/packages/**/
 !/packages/**/*.cjs
+!/packages/*/LICENSE
 !/packages/*/package.json
 !/packages/*/README.md
 
