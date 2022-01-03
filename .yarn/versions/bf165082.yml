@@ -1,6 +1,0 @@
-undecided:
-  - eslint-config-convergence-base
-  - eslint-config-convergence-json
-  - eslint-config-convergence-node
-  - eslint-config-convergence-react
-  - eslint-config-convergence-typescript
