@@ -1,4 +1,5 @@
 {
+  "description": "Convergence is an opinionated code quality checker.",
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.1.0",
     "eslint": "^8.5.0",
