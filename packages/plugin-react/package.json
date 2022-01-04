@@ -3,7 +3,13 @@
   "devDependencies": {
     "mocha": "^9.1.3"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "files": [
+    "accessibility.js",
+    "hooks.js",
+    "react.js",
     "rules/*"
   ],
   "license": "MIT",

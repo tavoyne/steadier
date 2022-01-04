@@ -6,6 +6,9 @@
     "@steadier/eslint-plugin-node": "workspace:^",
     "@steadier/eslint-plugin-yaml": "workspace:^"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "license": "MIT",
   "main": "index.js",
   "name": "@steadier/eslint-config",
