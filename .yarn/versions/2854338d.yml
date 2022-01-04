@@ -1,0 +1,8 @@
+releases:
+  "@steadier/eslint-config": patch
+  "@steadier/eslint-plugin-base": patch
+  "@steadier/eslint-plugin-json": patch
+  "@steadier/eslint-plugin-node": patch
+  "@steadier/eslint-plugin-react": patch
+  "@steadier/eslint-plugin-typescript": patch
+  "@steadier/eslint-plugin-yaml": patch

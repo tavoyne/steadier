@@ -2,12 +2,12 @@
   "author": "Théophile Avoyne",
   "dependencies": {
     "@steadier/eslint-plugin-base": "workspace:^",
-    "@typescript-eslint/eslint-plugin": "^5.8.1",
-    "eslint": "^8.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "eslint": "^8.6.0",
     "eslint-config-prettier": "^8.3.0"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.8.1",
+    "@typescript-eslint/parser": "^5.9.0",
     "mocha": "^9.1.3"
   },
   "files": [
@@ -19,5 +19,5 @@
   "scripts": {
     "test": "mocha index.test.js --exit"
   },
-  "version": "1.0.0-1"
+  "version": "0.0.0"
 }
