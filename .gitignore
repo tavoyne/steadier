@@ -29,8 +29,6 @@
 
 # Yarn
 !/.yarn
-!/.yarn/cache
-!/.yarn/cache/**/*
 !/.yarn/patches
 !/.yarn/patches/**/*
 !/.yarn/plugins
