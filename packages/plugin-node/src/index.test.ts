@@ -1,6 +1,4 @@
-"use strict";
-
-const assert = require("assert");
+import assert from "assert";
 
 describe("Node:", () => {
   it("All rules are present.", () => {
