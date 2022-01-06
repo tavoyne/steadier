@@ -44,9 +44,17 @@
 
 # Packages
 !/packages
-!/packages/**/*.js
 !/packages/*/
 !/packages/*/LICENSE
 !/packages/*/README.md
+!/packages/*/babel.config.json
 !/packages/*/package.json
-!/packages/*/rules
+!/packages/*/src
+!/packages/*/src/configs
+!/packages/*/src/configs/*.ts
+!/packages/*/src/index.ts
+!/packages/*/src/index.test.ts
+!/packages/*/src/rules
+!/packages/*/src/rules/*.ts
+!/packages/*/tsconfig.json
+!/packages/*/webpack.config.js
