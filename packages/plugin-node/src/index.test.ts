@@ -1,7 +1,3 @@
-import assert from "assert";
+test("All rules are present.", () => {});
 
-describe("Node:", () => {
-  it("All rules are present.", () => {
-    assert(true);
-  });
-});
+export {};
