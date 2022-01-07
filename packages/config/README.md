@@ -1,3 +1,1 @@
-# @steadier/eslint-config
-
-🚧**WORK IN PROGRESS**🏗
+🚧 **WORK IN PROGRESS** 🏗

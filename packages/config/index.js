@@ -1,10 +1,10 @@
+/* eslint-disable node/no-unpublished-require */
+
 "use strict";
 
-module.exports = {
-  extends: [
-    "plugin:@steadier/base/all",
-    "plugin:@steadier/json/all",
-    "plugin:@steadier/node/all",
-    "plugin:@steadier/yaml/all",
-  ],
-};
+require("@babel/register")({
+  extensions: [".ts"],
+  root: __dirname,
+});
+
+module.exports = require("./src/index.ts").default;
