@@ -1,3 +1,1 @@
-# @steadier/eslint-plugin-typescript
-
-🚧**WORK IN PROGRESS**🏗
+🚧 **WORK IN PROGRESS** 🏗
