@@ -3,7 +3,8 @@
 const path = require("path");
 
 module.exports = {
-  entry: path.resolve("src/index.ts"),
+  // eslint-disable-next-line node/no-process-env
+  entry: path.join(process.env.INIT_CWD, "src", "index.ts"),
   mode: "production",
   module: {
     rules: [
@@ -19,7 +20,8 @@ module.exports = {
       export: "default",
       type: "commonjs",
     },
-    path: path.resolve("lib"),
+    // eslint-disable-next-line node/no-process-env
+    path: path.join(process.env.INIT_CWD, "lib"),
   },
   resolve: {
     extensions: [".ts"],

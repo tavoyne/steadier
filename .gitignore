@@ -14,8 +14,10 @@
 !/.yarnrc.yml
 !/LICENSE
 !/README.md
+!/babel.config.json
 !/package.json
 !/tsconfig.json
+!/webpack.config.js
 !/yarn.lock
 
 # GitHub
@@ -46,7 +48,6 @@
 !/packages/*/
 !/packages/*/LICENSE
 !/packages/*/README.md
-!/packages/*/babel.config.json
 !/packages/*/index.js
 !/packages/*/package.json
 !/packages/*/src
@@ -56,4 +57,3 @@
 !/packages/*/src/index.test.ts
 !/packages/*/src/rules
 !/packages/*/src/rules/*.ts
-!/packages/*/webpack.config.js

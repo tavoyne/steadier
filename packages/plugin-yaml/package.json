@@ -5,15 +5,9 @@
     "yaml-eslint-parser": "^0.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/preset-env": "^7.16.7",
-    "@babel/preset-typescript": "^7.16.7",
     "@babel/register": "^7.16.7",
-    "babel-loader": "^8.2.3",
     "jest": "^27.4.7",
-    "lodash": "^4.17.21",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
+    "lodash": "^4.17.21"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
@@ -29,6 +23,7 @@
     "main": "lib/index.js"
   },
   "scripts": {
+    "build": "run global:build",
     "postpack": "rm -rf lib",
     "prepack": "webpack",
     "test": "jest"
