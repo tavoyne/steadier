@@ -33,5 +33,5 @@
     "prepack": "webpack",
     "test": "echo \"No test specified\""
   },
-  "version": "0.0.1"
+  "version": "0.1.1"
 }
