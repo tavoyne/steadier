@@ -24,8 +24,8 @@
   "packageManager": "yarn@3.1.1",
   "private": true,
   "scripts": {
-    "global:postpack": "rm -rf $INIT_CWD/lib",
-    "global:prepack": "webpack",
+    "global:postpack": "rm -rf $INIT_CWD/lib $INIT_CWD/LICENSE",
+    "global:prepack": "webpack && cp LICENSE $INIT_CWD/LICENSE",
     "lint": "eslint . && prettier . --check",
     "test": "jest"
   },

@@ -46,7 +46,6 @@
 # Packages
 !/packages
 !/packages/*/
-!/packages/*/LICENSE
 !/packages/*/README.md
 !/packages/*/index.js
 !/packages/*/package.json
