@@ -6,7 +6,6 @@
   },
   "devDependencies": {
     "@babel/register": "^7.16.7",
-    "jest": "^27.4.7",
     "lodash": "^4.17.21"
   },
   "engines": {
@@ -23,10 +22,8 @@
     "main": "lib/index.js"
   },
   "scripts": {
-    "build": "run global:build",
-    "postpack": "rm -rf lib",
-    "prepack": "webpack",
-    "test": "jest"
+    "postpack": "run global:postpack",
+    "prepack": "run global:prepack"
   },
-  "version": "0.1.1"
+  "version": "0.1.2"
 }

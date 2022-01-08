@@ -21,9 +21,10 @@
   "packageManager": "yarn@3.1.1",
   "private": true,
   "scripts": {
-    "global:build": "webpack",
+    "global:postpack": "rm -rf $INIT_CWD/lib",
+    "global:prepack": "webpack",
     "lint": "eslint . && prettier . --check",
-    "test": "yarn workspaces foreach run test"
+    "test": "jest"
   },
   "workspaces": [
     "packages/*"
