@@ -1,5 +1,6 @@
 "use strict";
 
+// eslint-disable-next-line node/no-unpublished-require
 require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
@@ -7,7 +8,7 @@ module.exports = {
   ignorePatterns: ["!.*", "/packages/*/lib/", "/.pnp.cjs", "/.yarn/"],
   overrides: [
     {
-      env: { mocha: true },
+      env: { jest: true },
       files: ["*.test.js"],
     },
     {
