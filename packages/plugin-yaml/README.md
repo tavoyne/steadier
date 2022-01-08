@@ -1,3 +1,1 @@
-# @steadier/eslint-plugin-yaml
-
-🚧**WORK IN PROGRESS**🏗
+🚧 **WORK IN PROGRESS** 🏗
