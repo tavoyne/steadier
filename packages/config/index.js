@@ -1,12 +1,13 @@
-/* eslint-disable node/no-unpublished-require */
-
 "use strict";
 
 const path = require("path");
 
+// eslint-disable-next-line node/no-unpublished-require
 require("@babel/register")({
   extensions: [".ts"],
+  plugins: ["babel-plugin-add-module-exports"],
   root: path.join(__dirname, "..", ".."),
 });
 
-module.exports = require("./src/index.ts").default;
+// eslint-disable-next-line node/no-unpublished-require
+module.exports = require("./src/index.ts");

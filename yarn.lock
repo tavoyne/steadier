@@ -1336,11 +1336,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@steadier/eslint-config@workspace:packages/config"
   dependencies:
+    "@babel/core": ^7.16.7
     "@babel/register": ^7.16.7
     "@steadier/eslint-plugin-base": "workspace:^"
     "@steadier/eslint-plugin-json": "workspace:^"
     "@steadier/eslint-plugin-node": "workspace:^"
     "@steadier/eslint-plugin-yaml": "workspace:^"
+    babel-plugin-add-module-exports: ^1.0.4
   peerDependencies:
     eslint: "*"
   languageName: unknown
@@ -1350,7 +1352,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@steadier/eslint-plugin-base@workspace:packages/plugin-base"
   dependencies:
-    "@babel/register": ^7.16.7
     eslint: ^8.6.0
     eslint-config-prettier: ^8.3.0
   peerDependencies:
@@ -1362,7 +1363,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@steadier/eslint-plugin-json@workspace:packages/plugin-json"
   dependencies:
-    "@babel/register": ^7.16.7
     eslint-plugin-jsonc: ^2.0.0
     jsonc-eslint-parser: ^2.0.4
     lodash: ^4.17.21
@@ -1375,7 +1375,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@steadier/eslint-plugin-node@workspace:packages/plugin-node"
   dependencies:
-    "@babel/register": ^7.16.7
     core-js: ^3.20.2
     eslint-plugin-node: ^11.1.0
   peerDependencies:
@@ -1387,7 +1386,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@steadier/eslint-plugin-yaml@workspace:packages/plugin-yaml"
   dependencies:
-    "@babel/register": ^7.16.7
     eslint-plugin-yml: ^0.12.0
     lodash: ^4.17.21
     yaml-eslint-parser: ^0.5.0
@@ -1760,6 +1758,13 @@ __metadata:
     "@babel/core": ^7.0.0
     webpack: ">=2"
   checksum: 78e1e1a91954d644b6ce66366834d4d245febbc0fde33e4e2831725e83d6e760d12b3a78e9534ce92af69067bef1d9d9674df36d8c1f20ee127bc2354b2203ba
+  languageName: node
+  linkType: hard
+
+"babel-plugin-add-module-exports@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "babel-plugin-add-module-exports@npm:1.0.4"
+  checksum: def017e6f34c956302b2fb2ce594d253b83229c3491444f89c2ee4a66e0882025a814676e27173687ca6d1fd4fbff860ce2f35ca4d66d1b333f6c78c8765e981
   languageName: node
   linkType: hard
 
@@ -3457,11 +3462,13 @@ __metadata:
     "@babel/core": ^7.16.7
     "@babel/preset-env": ^7.16.7
     "@babel/preset-typescript": ^7.16.7
+    "@babel/register": ^7.16.7
     "@rushstack/eslint-patch": ^1.1.0
     "@steadier/eslint-config": "workspace:^"
     "@types/jest": ^27.4.0
     "@types/node": ^17.0.8
     babel-loader: ^8.2.3
+    babel-plugin-add-module-exports: ^1.0.4
     eslint: ^8.6.0
     prettier: ^2.5.1
     typescript: ^4.5.4

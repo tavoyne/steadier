@@ -7,7 +7,9 @@
     "@steadier/eslint-plugin-yaml": "workspace:^"
   },
   "devDependencies": {
-    "@babel/register": "^7.16.7"
+    "@babel/core": "^7.16.7",
+    "@babel/register": "^7.16.7",
+    "babel-plugin-add-module-exports": "^1.0.4"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"

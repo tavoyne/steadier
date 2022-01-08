@@ -5,7 +5,6 @@
     "jsonc-eslint-parser": "^2.0.4"
   },
   "devDependencies": {
-    "@babel/register": "^7.16.7",
     "lodash": "^4.17.21"
   },
   "engines": {
@@ -13,7 +12,7 @@
   },
   "files": [],
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.ts",
   "name": "@steadier/eslint-plugin-json",
   "peerDependencies": {
     "eslint": "*"

@@ -4,7 +4,6 @@
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
-    "@babel/register": "^7.16.7",
     "core-js": "^3.20.2"
   },
   "engines": {
@@ -12,7 +11,7 @@
   },
   "files": [],
   "license": "MIT",
-  "main": "index.js",
+  "main": "src/index.ts",
   "name": "@steadier/eslint-plugin-node",
   "peerDependencies": {
     "eslint": "*"
