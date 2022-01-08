@@ -5,6 +5,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
       - name: Lint
         run: yarn lint
   test:
@@ -13,15 +15,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
       - name: Test
         run: yarn test
-  validate-yarn-setup:
-    name: Validate Yarn setup
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Validate Yarn setup
-        run: yarn install --immutable --immutable-cache --check-cache
 name: CI
 on: [push, pull_request]

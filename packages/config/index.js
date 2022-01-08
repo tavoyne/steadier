@@ -1,10 +1,13 @@
 "use strict";
 
-module.exports = {
-  extends: [
-    "plugin:@steadier/base/all",
-    "plugin:@steadier/json/all",
-    "plugin:@steadier/node/all",
-    "plugin:@steadier/yaml/all",
-  ],
-};
+const path = require("path");
+
+// eslint-disable-next-line node/no-unpublished-require
+require("@babel/register")({
+  extensions: [".ts"],
+  plugins: ["babel-plugin-add-module-exports"],
+  root: path.join(__dirname, "..", ".."),
+});
+
+// eslint-disable-next-line node/no-unpublished-require
+module.exports = require("./src/index.ts");

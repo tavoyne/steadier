@@ -6,14 +6,27 @@
     "@steadier/eslint-plugin-node": "workspace:^",
     "@steadier/eslint-plugin-yaml": "workspace:^"
   },
-  "engines": {
-    "node": ">=12.0.0"
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/register": "^7.16.7",
+    "babel-plugin-add-module-exports": "^1.0.4"
   },
+  "engines": {
+    "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
+  },
+  "files": [],
   "license": "MIT",
   "main": "index.js",
   "name": "@steadier/eslint-config",
   "peerDependencies": {
     "eslint": "*"
   },
-  "version": "0.0.1"
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
+  "scripts": {
+    "postpack": "run global:postpack",
+    "prepack": "run global:prepack"
+  },
+  "version": "0.1.3"
 }

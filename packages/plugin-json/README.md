@@ -1,3 +1,1 @@
-# @steadier/eslint-plugin-json
-
-🚧**WORK IN PROGRESS**🏗
+🚧 **WORK IN PROGRESS** 🏗
