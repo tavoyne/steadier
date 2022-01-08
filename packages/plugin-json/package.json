@@ -24,5 +24,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.2"
+  "version": "0.1.3"
 }
