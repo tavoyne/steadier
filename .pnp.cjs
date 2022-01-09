@@ -68,6 +68,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.8"],
             ["babel-loader", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:8.2.3"],
+            ["babel-plugin-add-module-exports", "npm:1.0.4"],
             ["eslint", "npm:8.6.0"],
             ["jest", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:27.4.7"],
             ["prettier", "npm:2.5.1"],
@@ -2861,7 +2862,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@steadier/eslint-plugin-node", "virtual:8887b6a2441db34ab1ba3fbe7c9845579215308ccc498c4a85a9e5819d04a228f34a59120ffbc8f4598ad4a4f3faf5843fed1ed522c69b1b6a86d391db5b7ea7#workspace:packages/plugin-node"],
             ["@steadier/eslint-plugin-yaml", "virtual:8887b6a2441db34ab1ba3fbe7c9845579215308ccc498c4a85a9e5819d04a228f34a59120ffbc8f4598ad4a4f3faf5843fed1ed522c69b1b6a86d391db5b7ea7#workspace:packages/plugin-yaml"],
             ["@types/eslint", null],
-            ["babel-plugin-add-module-exports", "npm:1.0.4"],
             ["eslint", "npm:8.6.0"]
           ],
           "packagePeers": [
@@ -2879,8 +2879,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@steadier/eslint-plugin-base", "virtual:8887b6a2441db34ab1ba3fbe7c9845579215308ccc498c4a85a9e5819d04a228f34a59120ffbc8f4598ad4a4f3faf5843fed1ed522c69b1b6a86d391db5b7ea7#workspace:packages/plugin-base"],
             ["@steadier/eslint-plugin-json", "virtual:fd883557718c3dcfe8953f2132cf7f7343ed19de40189310918a75c67e58c91dcfa467ee5f01ce451147befaebc9f436f6d641ba64fcb76d44657cdeb19b59e9#workspace:packages/plugin-json"],
             ["@steadier/eslint-plugin-node", "virtual:fd883557718c3dcfe8953f2132cf7f7343ed19de40189310918a75c67e58c91dcfa467ee5f01ce451147befaebc9f436f6d641ba64fcb76d44657cdeb19b59e9#workspace:packages/plugin-node"],
-            ["@steadier/eslint-plugin-yaml", "virtual:fd883557718c3dcfe8953f2132cf7f7343ed19de40189310918a75c67e58c91dcfa467ee5f01ce451147befaebc9f436f6d641ba64fcb76d44657cdeb19b59e9#workspace:packages/plugin-yaml"],
-            ["babel-plugin-add-module-exports", "npm:1.0.4"]
+            ["@steadier/eslint-plugin-yaml", "virtual:fd883557718c3dcfe8953f2132cf7f7343ed19de40189310918a75c67e58c91dcfa467ee5f01ce451147befaebc9f436f6d641ba64fcb76d44657cdeb19b59e9#workspace:packages/plugin-yaml"]
           ],
           "linkType": "SOFT",
         }]
@@ -7687,6 +7686,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:27.4.0"],
             ["@types/node", "npm:17.0.8"],
             ["babel-loader", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:8.2.3"],
+            ["babel-plugin-add-module-exports", "npm:1.0.4"],
             ["eslint", "npm:8.6.0"],
             ["jest", "virtual:dc3fc578bfa5e06182a4d2be39ede0bc5b74940b1ffe0d70c26892ab140a4699787750fba175dc306292e80b4aa2c8c5f68c2a821e69b2c37e360c0dff36ff66#npm:27.4.7"],
             ["prettier", "npm:2.5.1"],

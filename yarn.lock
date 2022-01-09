@@ -1637,7 +1637,6 @@ __metadata:
     "@steadier/eslint-plugin-json": "workspace:^"
     "@steadier/eslint-plugin-node": "workspace:^"
     "@steadier/eslint-plugin-yaml": "workspace:^"
-    babel-plugin-add-module-exports: ^1.0.4
   peerDependencies:
     eslint: "*"
   languageName: unknown
@@ -5532,6 +5531,7 @@ __metadata:
     "@types/jest": ^27.4.0
     "@types/node": ^17.0.8
     babel-loader: ^8.2.3
+    babel-plugin-add-module-exports: ^1.0.4
     eslint: ^8.6.0
     jest: ^27.4.7
     prettier: ^2.5.1
