@@ -67,7 +67,7 @@ Files with the following extensions will be checked:
 
 By default, the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) doesn't check`.json` files. You have to enable this behaviour manually. In your `.vscode/settings.json` file:
 
-```json
+```jsonc
 {
   // ...
   "eslint.validate": ["json", "json5", "jsonc"]
