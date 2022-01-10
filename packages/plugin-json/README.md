@@ -27,7 +27,7 @@ module.exports = {
 };
 ```
 
-Note: we strongly advise against building your own config from the plugin (using `plugin` and `rules`), as it would defeat the purpose of Steadier, which is to make code-quality checking uniform and configless, kind of what [Prettier](https://prettier.io/) is doing with code formatting. Follow [this link](../..) to learn more about Steadier.
+Note: we strongly advise against building your own config from the plugin (using `plugin` and `rules`), as it would defeat the purpose of Steadier, which is to make code-quality checking uniform and configless, kind of what [Prettier](https://prettier.io/) is doing with code formatting. Follow [this link](..) to learn more about Steadier.
 
 If you feed badly about a specific rule, you have two options:
 
@@ -65,7 +65,7 @@ Files with the following extensions will be checked:
 
 ### VSCode
 
-By default, the (eslint extension)[https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint] doesn't check`.json` files. You have to enable this behaviour manually. In your `.vscode/settings.json` file:
+By default, the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) doesn't check`.json` files. You have to enable this behaviour manually. In your `.vscode/settings.json` file:
 
 ```json
 {
