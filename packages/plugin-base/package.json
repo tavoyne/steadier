@@ -23,6 +23,11 @@
   "publishConfig": {
     "main": "lib/index.js"
   },
+  "repository": {
+    "directory": "packages/plugin-base",
+    "type": "git",
+    "url": "https://github.com/theoavoyne/steadier"
+  },
   "scripts": {
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
