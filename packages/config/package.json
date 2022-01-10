@@ -4,6 +4,7 @@
     "@steadier/eslint-plugin-base": "workspace:^",
     "@steadier/eslint-plugin-json": "workspace:^",
     "@steadier/eslint-plugin-node": "workspace:^",
+    "@steadier/eslint-plugin-typescript": "workspace:^",
     "@steadier/eslint-plugin-yaml": "workspace:^"
   },
   "devDependencies": {

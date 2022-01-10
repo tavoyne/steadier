@@ -1,7 +1,7 @@
 const suggestion = {
   "node/callback-return": "error",
   "node/exports-style": "error",
-  "node/file-extension-in-import": "error",
+  "node/file-extension-in-import": "off",
   "node/global-require": "error",
   "node/handle-callback-err": "error",
   "node/no-mixed-requires": "error",
@@ -43,6 +43,15 @@ const problem = {
 
 export default {
   env: { node: true },
+  overrides: [
+    {
+      files: ["**/{src,source,sources}/**/*.{js,jsx,ts,tsx}"],
+      rules: {
+        "node/no-unpublished-import": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+      },
+    },
+  ],
   plugins: ["node"],
   rules: {
     ...problem,

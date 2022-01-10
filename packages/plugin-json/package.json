@@ -5,6 +5,7 @@
     "jsonc-eslint-parser": "^2.0.4"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.178",
     "lodash": "^4.17.21"
   },
   "engines": {

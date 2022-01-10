@@ -107,7 +107,7 @@ const suggestion = {
   "no-div-regex": "error",
   "no-else-return": "error",
   "no-empty": "error",
-  "no-empty-function": "error",
+  "no-empty-function": "off",
   "no-eq-null": "error",
   "no-eval": "error",
   "no-extend-native": "error",
@@ -183,7 +183,7 @@ const suggestion = {
   "prefer-exponentiation-operator": "error",
   "prefer-named-capture-group": "error",
   "prefer-numeric-literals": "error",
-  "prefer-object-has-own": "error",
+  "prefer-object-has-own": "off",
   "prefer-object-spread": "error",
   "prefer-promise-reject-errors": "error",
   "prefer-regex-literals": "error",
@@ -205,8 +205,14 @@ const suggestion = {
 };
 
 export default {
+  overrides: [
+    {
+      files: ["**/{src,source,sources}/**/*.{js,jsx}"],
+      parser: "@babel/eslint-parser",
+    },
+  ],
   parserOptions: {
-    ecmaVersion: 2021,
+    ecmaVersion: "latest",
   },
   rules: {
     ...layout,

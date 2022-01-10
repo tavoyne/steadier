@@ -5,18 +5,17 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
   extends: ["@steadier"],
-  ignorePatterns: ["!.*", "/packages/*/lib/", "/.pnp.cjs", "/.yarn/"],
+  ignorePatterns: [
+    "!.*",
+    "/.pnp.cjs",
+    "/.pnp.loader.mjs",
+    "/.yarn/**/*",
+    "/packages/*/lib/**/*",
+  ],
   overrides: [
     {
       env: { jest: true },
-      files: ["*.test.js"],
-    },
-    {
-      files: ["packages/*/src/**/*"],
-      parserOptions: { sourceType: "module" },
-      rules: {
-        "node/no-unsupported-features/es-syntax": "off",
-      },
+      files: ["*.test.{js,jsx,ts,tsx}"],
     },
   ],
   root: true,

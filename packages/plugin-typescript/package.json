@@ -1,14 +1,8 @@
 {
   "author": "Théophile Avoyne",
-  "dependencies": {
-    "@babel/core": "^7.16.7",
-    "@babel/eslint-parser": "^7.16.5"
-  },
   "devDependencies": {
-    "@types/eslint": "^8.2.2",
-    "@types/eslint-config-prettier": "^6.11.0",
-    "eslint": "^8.6.0",
-    "eslint-config-prettier": "^8.3.0"
+    "@typescript-eslint/parser": "^5.9.0",
+    "core-js": "^3.20.2"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
@@ -16,7 +10,7 @@
   "files": [],
   "license": "MIT",
   "main": "src/index.ts",
-  "name": "@steadier/eslint-plugin-base",
+  "name": "@steadier/eslint-plugin-typescript",
   "peerDependencies": {
     "eslint": "*"
   },
