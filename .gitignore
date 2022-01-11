@@ -9,8 +9,6 @@
 !.gitignore
 
 # Root
-!/.pnp.cjs
-!/.pnp.loader.mjs
 !/.prettierignore
 !/.yarnrc.yml
 !/LICENSE
