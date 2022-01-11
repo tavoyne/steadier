@@ -1,6 +1,8 @@
 # Introduction
 
-> :warning: This is work in progress.
+> :warning: Warning
+>
+> This is work in progress. It is not ready for use in production applications just yet.
 
 The advent of [Prettier](https://prettier.io/) in the recent years demonstrated that the ecosystem was in need for a configless, opinionated way of checking code.
 
