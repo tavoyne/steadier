@@ -1,79 +1,93 @@
-## WORK IN PROGRESS
+# Introduction
 
-Although common sense led the most of us to the same conclusion, the advent of Prettier in the recent years demonstrated that the ecosystem was in need for a configless, opinionated way of checking its code.
+> :warning: This is work in progress.
 
-Steadier is an attempt to extend all the good Prettier has brought to code formatting to code quality checking.
+The advent of [Prettier](https://prettier.io/) in the recent years demonstrated that the ecosystem was in need for a configless, opinionated way of checking code.
 
-What's important about Steadier is that it will be built by and for the community. Every rule will have its own discussion on GitHub. Collaborators will be invited to share their experience with it. If there's no direct answer and under certain conditions, a vote will take place.
+Steadier is an attempt to extend all the good [Prettier](https://prettier.io/) has brought to code formatting to code-quality checking.
 
-Steadier is fully integrated with Prettier (no conflicting rules).
+# Installation
 
-Steadier today is stupidely strict, this is why it is not yet recommended for use in production applications. If you're a warrior and > want to integrate it anyway (we thank you for it), you of course have the possibility to overrride the rules anyway.
-
-It will cover all file types modern javascript applications take advantage of, i.e. ~ all extensions supported by Prettier.
-
-As we can't reinvent the wheel in one single shot, the idea for the V1 is to take advantage of ESLint and existing ESLint plugins. But, the idea in the long-term is to be dependency free, i.e. to have our own Linter that's faster and tailored to our needs, our own set of rules, etc.
-
-V1 is expected to be stable by the end of 2022.
-
-# Why Steadier?
-
-We all noticed that, in Javascript, there's often more than one way to code the same thing.
-
-Between those, there's usually one that stands out from the other. When there's not, we just need to pick one and stick with it.
-
-Steadier helps with that. Basically, we try to have a good overview of all a rule's use cases, and then just make a decision, collectively.
-
-We live in a world in which Babel exists. This means that, even if your target user is a texan farmer and his 2002 PC, you should be writing code in a ES21 fashion. Why is that great? Because it means that we can enforce uniform styling over all our projects, no matter what browsers we're targetting.
-
-# The constitution
-
-1. Steadier is OPINIONATED. This means that it implements what works best IN GENERAL. Using Steadier will probably sometimes require you to change the way you code. This is normal, and this is for the best. If you can't live with it, you can override any rule, though it isn't recommended.
-2. Steadier favorises rules that enforce one syntax and forbid all other ones. If there's still two ways of writing something after running Steadier, Steadier team is sad.
-3. Steadier cares about **code quality rules** not formatting. Formatting is left to Prettier who killed the thing.
-
-# Getting started
-
-If you want to be up and running in seconds, just download the config package:
+With npm:
 
 ```bash
-npm install --save-dev --save-exact @steadier/eslint-config
+npm install @steadier/eslint-config --save-dev --save-exact
 ```
+
+With Yarn:
 
 ```bash
-yarn add --dev --exact @steadier/eslint-config
+yarn add @steadier/eslint-config --dev --exact
 ```
 
-And add it to your .eslintrc.js file:
+# Usage
+
+In your `.eslintrc.js` file:
+
+```javascript
+module.exports = {
+  // ...
+  extends: ["@steadier"],
+};
+```
+
+And that's basically it.
+
+# Editor integration
+
+## VSCode
+
+First, make sure that you have the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+
+Then, in your `.vscode/settings.json` file, add:
 
 ```jsonc
 {
   // ...
-  "extends": ["@steadier"]
+  "editor.codeActionsOnSave": { "source.fixAll.eslint": true },
+  "eslint.validate": ["json", "json5", "jsonc", "yaml", "yml"]
 }
 ```
 
-That's basically it!
+The first line enables error auto-fixing on save. The second line enables JSON/YAML-files checking.
 
-BUT, now you're checking all kind of files (YAML, etc.). If you only want to lint a specific set of files and are afraid of downloading the whole set of plugins (which you should be if you're performing CI), you can download each plugin individually:
+# Why Steadier
 
-```bash
-npm install --save-dev --save-exact @steadier/eslint-plugin-react
-```
+- It's fully integrated with [Prettier](https://prettier.io/) (no conflicting rules).
+- ...
 
-```bash
-yarn add --dev --exact @steadier/eslint-plugin-react
-```
+# Philosophy
 
-And use them that way:
+Steadier is built _by_ and _for_ the community.
 
-```jsonc
-{
-  // ...
-  "extends": [
-     "plugin:@steadier/react/all"
-     "plugin:@steadier/yaml/all",
-     // ...
-   ]
-}
-```
+Feeling badly about a rule? Open a discussion on GitHub. Present your arguments. If there's 20+ :thumbsup: on your initial comment, the discussion will be turned into an issue, discussed more thoroughly and, depending on the conclusion, fixed and added to the next release. Follow [this link](CONTRIBUTING.md) to learn more about how to contribute.
+
+# Constitution
+
+1. Steadier is _OPINIONATED_. This means that it implements what works best _IN GENERAL_. Be aware that using Steadier will probably sometimes require you to change the way you code. Believe us, this is for the best.
+2. Steadier cares about code _quality_ not _formatting_. Formatting is left to [Prettier](https://prettier.io/) who killed the damn thing.
+3. ...
+
+# Why is it a good time for Steadier?
+
+> Web developers of all countries, unite!
+
+We live in a world in which [Babel](https://babeljs.io/) exists. This means that, even if your target user is a texan farmer and his 2002 PC (don't judge, it's a promising niche), you should be writing code in an _esnext_ fashion. Why is that great? Because it means that, no matter what kind of developer you are, we can all share the same style guide, enforce the same conventions, push the web forward in unity.
+
+Every year, [TC39](https://tc39.es/) is making JavaScript a bit better. Unfortunately, most developers (especially newcomers) are not aware of the latest novelties and deprecations.
+
+# The future of Steadier
+
+We can't reinvent the wheel in one single shot. In V1, we'll take advantage of ESLint and existing ESLint plugins. But, expect Steadier to be dependency-free in a near future.
+
+# Supported formats and libraries
+
+- JavaScript
+- JSX
+- JSON
+- YAML
+- Node
+- React
+- TypeScript
+
+:rocket: And more to come.
