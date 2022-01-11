@@ -37,7 +37,7 @@ And that's basically it.
 
 ## VSCode
 
-First, make sure that you have the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint).
+First, make sure that you have the [eslint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) installed.
 
 Then, in your `.vscode/settings.json` file, add:
 
@@ -53,8 +53,11 @@ The first line enables error auto-fixing on save. The second line enables JSON/Y
 
 # Why Steadier
 
+- Half of the rules are auto-fixable, which means that you're writting better code without writting better code.
 - It's fully integrated with [Prettier](https://prettier.io/) (no conflicting rules).
-- ...
+- It will open you the door to fancy ES2022-developers private clubs (they exist), you ES5 rube.
+- Your code style will be uniform across your projects and all other projects using Steadier.
+- No more endless discussions, collaboration made easy.
 
 # Philosophy
 
