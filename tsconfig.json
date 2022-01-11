@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    "moduleResolution": "node",
-    "strict": true,
-    "target": "esnext"
+    "skipLibCheck": true,
+    "strict": true
   }
 }

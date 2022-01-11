@@ -1,4 +1,4 @@
-import * as ymlPlugin from "eslint-plugin-yml";
+import ymlPlugin from "eslint-plugin-yml";
 import { pick } from "lodash";
 
 import allConfig from "./configs/all";
