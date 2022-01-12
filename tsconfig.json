@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
+    "noEmit": true,
     "skipLibCheck": true,
     "strict": true
-  }
+  },
+  "include": ["packages/*/src/**/*.ts"]
 }

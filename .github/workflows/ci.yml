@@ -19,5 +19,15 @@ jobs:
         run: yarn install
       - name: Test
         run: yarn test
+  typecheck:
+    name: Typecheck
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Test
+        run: yarn typecheck
 name: CI
 on: [push, pull_request]

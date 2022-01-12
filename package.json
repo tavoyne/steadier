@@ -25,7 +25,8 @@
     "global:postpack": "rm -rf $INIT_CWD/lib $INIT_CWD/LICENSE",
     "global:prepack": "webpack && cp LICENSE $INIT_CWD/LICENSE",
     "lint": "eslint . && prettier . --check",
-    "test": "jest"
+    "test": "jest",
+    "typecheck": "tsc"
   },
   "workspaces": [
     "packages/*"
