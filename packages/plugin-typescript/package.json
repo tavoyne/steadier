@@ -9,13 +9,14 @@
   },
   "files": [],
   "license": "MIT",
-  "main": "src/index.ts",
+  "main": "./src/index.ts",
   "name": "@steadier/eslint-plugin-typescript",
   "peerDependencies": {
     "eslint": "*"
   },
   "publishConfig": {
-    "main": "lib/index.js"
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts"
   },
   "repository": {
     "directory": "packages/plugin-typescript",

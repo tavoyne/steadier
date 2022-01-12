@@ -16,13 +16,14 @@
   },
   "files": [],
   "license": "MIT",
-  "main": "index.js",
+  "main": "./index.js",
   "name": "@steadier/eslint-config",
   "peerDependencies": {
     "eslint": "*"
   },
   "publishConfig": {
-    "main": "lib/index.js"
+    "main": "./lib/index.js",
+    "types": "./lib/index.d.ts"
   },
   "repository": {
     "directory": "packages/config",
