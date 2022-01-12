@@ -27,7 +27,7 @@ jobs:
         uses: actions/checkout@v2
       - name: Install dependencies
         run: yarn install
-      - name: Test
+      - name: Typecheck
         run: yarn typecheck
 name: CI
 on: [push, pull_request]
