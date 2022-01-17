@@ -11,7 +11,9 @@
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
   },
-  "files": [],
+  "files": [
+    "./lib/index.d.ts"
+  ],
   "license": "MIT",
   "main": "./src/index.ts",
   "name": "@steadier/eslint-plugin-yaml",
@@ -31,5 +33,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.8"
+  "version": "0.1.14"
 }
