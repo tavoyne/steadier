@@ -4,7 +4,7 @@
     "eslint-plugin-node": "^11.1.0"
   },
   "devDependencies": {
-    "core-js": "^3.20.2"
+    "core-js": "^3.20.3"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"

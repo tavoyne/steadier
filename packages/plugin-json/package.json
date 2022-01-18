@@ -2,7 +2,7 @@
   "author": "Théophile Avoyne",
   "dependencies": {
     "eslint-plugin-jsonc": "^2.0.0",
-    "jsonc-eslint-parser": "^2.0.4"
+    "jsonc-eslint-parser": "^2.1.0"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.178",

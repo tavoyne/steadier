@@ -1,8 +1,8 @@
 {
   "author": "Théophile Avoyne",
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.9.0",
-    "core-js": "^3.20.2"
+    "@typescript-eslint/parser": "^5.10.0",
+    "core-js": "^3.20.3"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
