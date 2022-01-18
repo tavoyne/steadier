@@ -4,6 +4,5 @@
     "noEmit": true,
     "skipLibCheck": true,
     "strict": true
-  },
-  "include": ["packages/*/src/**/*.ts"]
+  }
 }
