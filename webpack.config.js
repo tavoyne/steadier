@@ -1,12 +1,10 @@
 "use strict";
 
+/* eslint-disable node/no-process-env */
+
 const path = require("path");
 
-const manifest = require(path.join(
-  // eslint-disable-next-line node/no-process-env
-  process.env.INIT_CWD,
-  "package.json"
-));
+const manifest = require(path.join(process.env.INIT_CWD, "package.json"));
 
 const externals = {
   ...manifest.dependencies,
@@ -18,7 +16,6 @@ Object.keys(externals).forEach((key) => {
 });
 
 module.exports = {
-  // eslint-disable-next-line node/no-process-env
   entry: path.join(process.env.INIT_CWD, "src", "index.ts"),
   externals,
   externalsPresets: { node: true },
@@ -37,7 +34,6 @@ module.exports = {
       export: "default",
       type: "commonjs",
     },
-    // eslint-disable-next-line node/no-process-env
     path: path.join(process.env.INIT_CWD, "lib"),
   },
   resolve: {
