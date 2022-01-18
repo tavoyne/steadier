@@ -9,6 +9,7 @@
     "@types/node": "^17.0.8",
     "babel-loader": "^8.2.3",
     "babel-plugin-add-module-exports": "^1.0.4",
+    "dts-bundle-generator": "^6.4.0",
     "eslint": "^8.6.0",
     "jest": "^27.4.7",
     "prettier": "^2.5.1",
@@ -23,7 +24,7 @@
   "private": true,
   "scripts": {
     "global:postpack": "rm -rf $INIT_CWD/lib $INIT_CWD/LICENSE.md",
-    "global:prepack": "webpack && cp LICENSE.md $INIT_CWD/LICENSE.md",
+    "global:prepack": "webpack && cp LICENSE.md $INIT_CWD/LICENSE.md && dts-bundle-generator -out-file $INIT_CWD/lib/index.d.ts $INIT_CWD/src/index.ts",
     "lint": "eslint . && prettier . --check",
     "test": "jest",
     "typecheck": "tsc"

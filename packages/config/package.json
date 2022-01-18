@@ -36,5 +36,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.15"
+  "version": "0.1.16"
 }
