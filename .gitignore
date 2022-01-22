@@ -9,6 +9,7 @@
 !.gitignore
 
 # Root
+!/.gitbook.yml
 !/.prettierignore
 !/.yarnrc.yml
 !/LICENSE.md
@@ -18,6 +19,11 @@
 !/tsconfig.json
 !/webpack.config.js
 !/yarn.lock
+
+# Docs
+!/docs
+!/docs/**/
+!/docs/**/*.md
 
 # GitHub
 !/.github
