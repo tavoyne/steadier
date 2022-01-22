@@ -6,7 +6,7 @@
 
 The advent of [Prettier](https://prettier.io/) in the recent years demonstrated that the ecosystem was in need for a configless, opinionated way of checking code. Steadier is an attempt to extend all the good Prettier has brought to _code formatting_ to _code-quality checking_.
 
-# Why Steadier?
+## Why Steadier?
 
 > _Web developers of all countries, unite!_
 
