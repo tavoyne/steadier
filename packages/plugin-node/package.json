@@ -15,7 +15,7 @@
   "files": [
     "./lib/index.d.ts"
   ],
-  "homepage": "https://steadier.tavoyne.com/",
+  "homepage": "https://steadier.tavoyne.com",
   "license": "MIT",
   "main": "./src/index.ts",
   "name": "@steadier/eslint-plugin-node",
@@ -35,5 +35,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.18"
+  "version": "0.1.19"
 }
