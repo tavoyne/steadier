@@ -29,7 +29,7 @@
   "repository": {
     "directory": "packages/plugin-base",
     "type": "git",
-    "url": "https://github.com/theoavoyne/steadier"
+    "url": "https://github.com/tavoyne/steadier"
   },
   "scripts": {
     "postpack": "run global:postpack",

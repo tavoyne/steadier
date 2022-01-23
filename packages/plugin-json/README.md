@@ -31,7 +31,7 @@ Note: we strongly advise against building your own config from the plugin (using
 
 If you feed badly about a specific rule, you have two options:
 
-- [Start a discussion](https://github.com/theoavoyne/steadier/discussions) to present your arguments. The discussion should be named as the rule in question (e.g. `jsonc/sort-keys`). If the initial comment reaches 20+ thumbs up, it will be turned into an issue, discussed more thorougly and, if needed, fixed and added to the next release.
+- [Start a discussion](https://github.com/tavoyne/steadier/discussions) to present your arguments. The discussion should be named as the rule in question (e.g. `jsonc/sort-keys`). If the initial comment reaches 20+ thumbs up, it will be turned into an issue, discussed more thorougly and, if needed, fixed and added to the next release.
 - Disable it inside an override. For example, if you really don't want keys to be sorted in `./package.json`:
 
 ```javascript

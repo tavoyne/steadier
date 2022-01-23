@@ -30,7 +30,7 @@
   "repository": {
     "directory": "packages/config",
     "type": "git",
-    "url": "https://github.com/theoavoyne/steadier"
+    "url": "https://github.com/tavoyne/steadier"
   },
   "scripts": {
     "postpack": "run global:postpack",
