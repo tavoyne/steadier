@@ -1,5 +1,8 @@
 {
-  "author": "Théophile Avoyne",
+  "author": {
+    "email": "me@tavoyne.com",
+    "name": "Théophile Avoyne"
+  },
   "dependencies": {
     "eslint-plugin-yml": "^0.12.0",
     "yaml-eslint-parser": "^0.5.0"
@@ -33,5 +36,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.16"
+  "version": "0.1.17"
 }

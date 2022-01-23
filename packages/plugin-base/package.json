@@ -1,5 +1,8 @@
 {
-  "author": "Théophile Avoyne",
+  "author": {
+    "email": "me@tavoyne.com",
+    "name": "Théophile Avoyne"
+  },
   "dependencies": {
     "@babel/core": "^7.16.7",
     "@babel/eslint-parser": "^7.16.5"
@@ -35,5 +38,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.16"
+  "version": "0.1.17"
 }

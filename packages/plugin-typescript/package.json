@@ -1,5 +1,8 @@
 {
-  "author": "Théophile Avoyne",
+  "author": {
+    "email": "me@tavoyne.com",
+    "name": "Théophile Avoyne"
+  },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.10.0",
     "core-js": "^3.20.3"
@@ -29,5 +32,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.16"
+  "version": "0.1.17"
 }
