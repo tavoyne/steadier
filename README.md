@@ -2,7 +2,7 @@
 
 > :mega: Hear ye, hear ye!
 >
-> If you're an experienced developer, a seasoned library maintainer, an unrivaled strategist or a designer of genius, Steadier needs you. It's an ambitious project that I won't be able to carry out on my own. Its success depends on people like you. It's completely new, so every brick remains to be laid. Reach me if you're willing to join the adventure: [theo@blackjelly.co](mailto:theo@blackjelly.co) ([@tavoyne](https://github.com/tavoyne)).
+> If you're an experienced developer, a seasoned library maintainer, an unrivaled strategist or a designer of genius, Steadier needs you. It's an ambitious project that I won't be able to carry out on my own. Its success depends on people like you. It's completely new, so every brick remains to be laid. Reach me if you're willing to join the adventure: [me@tavoyne.com](mailto:me@tavoyne.com) ([@tavoyne](https://github.com/tavoyne)).
 
 The advent of [Prettier](https://prettier.io/) in the recent years demonstrated that the ecosystem was in need for a configless, opinionated way of checking code. Steadier is an attempt to extend all the good Prettier has brought to _code formatting_ to _code-quality checking_.
 
