@@ -40,5 +40,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.17"
+  "version": "0.1.18"
 }
