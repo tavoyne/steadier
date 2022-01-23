@@ -15,6 +15,7 @@
   "files": [
     "./lib/index.d.ts"
   ],
+  "homepage": "https://steadier.tavoyne.com/",
   "license": "MIT",
   "main": "./src/index.ts",
   "name": "@steadier/eslint-plugin-node",
