@@ -5,13 +5,7 @@ require("@rushstack/eslint-patch/modern-module-resolution");
 
 module.exports = {
   extends: ["@steadier"],
-  ignorePatterns: [
-    "!.*",
-    "/.pnp.cjs",
-    "/.pnp.loader.mjs",
-    "/.yarn/**/*",
-    "/packages/*/lib/**/*",
-  ],
+  ignorePatterns: ["!.*", "/.pnp.cjs", "/.yarn/**/*", "/packages/*/lib/**/*"],
   overrides: [
     {
       env: { jest: true },
