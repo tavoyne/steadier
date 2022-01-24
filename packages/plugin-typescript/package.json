@@ -3,8 +3,10 @@
     "email": "me@tavoyne.com",
     "name": "Théophile Avoyne"
   },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.10.0"
+  },
   "devDependencies": {
-    "@typescript-eslint/parser": "^5.10.0",
     "core-js": "^3.20.3"
   },
   "engines": {
@@ -33,5 +35,5 @@
     "postpack": "run global:postpack",
     "prepack": "run global:prepack"
   },
-  "version": "0.1.19"
+  "version": "0.1.20"
 }
