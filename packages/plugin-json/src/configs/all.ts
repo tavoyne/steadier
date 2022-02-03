@@ -35,7 +35,7 @@ const suggestion = {
 export default {
   overrides: [
     {
-      files: ["*.json", "*.json5", "*.jsonc"],
+      files: ["*.json", "*.json5", "*.jsonc", ".firebaserc"],
       parser: "jsonc-eslint-parser",
       plugins: ["jsonc"],
       rules: {
