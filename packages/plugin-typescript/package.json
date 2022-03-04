@@ -4,10 +4,10 @@
     "name": "Théophile Avoyne"
   },
   "dependencies": {
-    "@typescript-eslint/parser": "^5.10.0"
+    "@typescript-eslint/parser": "^5.13.0"
   },
   "devDependencies": {
-    "core-js": "^3.20.3"
+    "core-js": "^3.21.1"
   },
   "engines": {
     "node": "^12.22.0 || ^14.17.0 || >=16.0.0"
